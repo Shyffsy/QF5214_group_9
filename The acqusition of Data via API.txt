@@ -1,0 +1,19 @@
+Step1: Install Kaggle package and set the path
+-pip install kaggle
+-find ~/.local/bin -name kaggle
+-sudo edit ~/.bashrc
+-source ~/.bashrc
+
+Step2: Install kaggle API json file
+
+Step3: Create kaggle content:
+-sudo mkdir ~/.kaggle
+
+Step4: Move the json file to the content:
+-sudo mv kaggle.json ~/.kaggle/kaggle.json
+
+Step5: Set authorization:
+Sudo chod 600 ~/.kaggle/kaggle.json
+
+Step6: Install dataset:
+-kaggle competitions download -c home-credit-credit-risk-model-stability
